@@ -6,6 +6,10 @@ def sigmoid(x):
     return 1. / (1 + np.exp(-x+10))
 
 
+def sigmoid2(x):
+    return 1. / (1 + np.exp(-x+10))
+
+
 def plot_sigmoid():
     x = np.linspace(0, 20, 1000)  # 这个表示在-10到10之间生成1000个x值
     y = sigmoid(x)  # 对上述生成的1000个数循环用sigmoid公式求对应的y
@@ -27,3 +31,4 @@ def plot_sigmoid():
 
 if __name__ == "__main__":
     plot_sigmoid()
+
